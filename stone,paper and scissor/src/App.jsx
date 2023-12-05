@@ -51,17 +51,25 @@ function App() {
     </div>
      <div className='App'>
       <div className='div1'>
-        <div>
-        OPÇÃO SELECIONADA: {player1}
+        <div className='frontScore'>
+          É isso ai
         </div>
-        <div className='div2'>
           <button className="a1" onClick={() => Result(setPlayer1('scissor'), setPlayer2(selectedOptionForMachine))}><img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296853_1280.png" alt="" width='50px'/></button>
-          <button className="a1" onClick={() => Result(setPlayer1('rock'), setPlayer2(selectedOptionForMachine))}><img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_1280.png" alt="" width='50px'/></button>
-          <button className="a1" onClick={() => Result(setPlayer1('paper'), setPlayer2(selectedOptionForMachine))}><img src="https://storage.needpix.com/rsynced_images/rock-paper-scissors-296855_1280.png" alt="" width='50px'/></button>
+          <button className="a2" onClick={() => Result(setPlayer1('rock'), setPlayer2(selectedOptionForMachine))}><img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_1280.png" alt="" width='50px'/></button>
+          <button className="a3" onClick={() => Result(setPlayer1('paper'), setPlayer2(selectedOptionForMachine))}><img src="https://storage.needpix.com/rsynced_images/rock-paper-scissors-296855_1280.png" alt="" width='50px'/></button>
         </div>
-        <div>
+        </div>
+      <div className='bpai'>
+        <div className='b1'>
+
+        </div>
+        <div className='b2'>
+
+        </div>
+        <div className='b3'>
         </div>
       </div>
+      <div>
       </div>
       <div>
       SCORE PLAYER 1: {score}
@@ -74,20 +82,6 @@ function App() {
     <div>
     </div>
     SCORE PLAYER 2: {score2}
-    <div>
-      <div className='div1b'>
-        <div className='div2b'>
-          <button className="a1b"><img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296853_1280.png" alt="" width='50px'/></button>
-          <button className="a1b"><img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_1280.png" alt="" width='50px'/></button>
-          <button className="a1b"><img src="https://storage.needpix.com/rsynced_images/rock-paper-scissors-296855_1280.png" alt="" width='50px'/></button>
-        </div>
-        <div>
-        </div>
-      </div>
-    </div>
-    <div>
-      Player 2
-    </div>
     </>
   )
 }
