@@ -51,13 +51,7 @@
   width: 100px;
   border-radius: 10px;
   display: flex;
-}
-
-.numberPlayer1Score {
-  position: absolute;
-  bottom: -35px;
-  right: 30px;
-  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
