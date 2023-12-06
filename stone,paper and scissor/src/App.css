@@ -45,42 +45,48 @@
   right: 50px;
   top: 40px;
   font-size: 300%;
-  font-family: Arial, Helvetica, sans-serif ;
+  font-family: 'Courier New', Courier, monospace;
   border-style: solid;
   height: 100px;
   width: 100px;
   border-radius: 10px;
+  display: flex;
 }
 
 .numberPlayer1Score {
   position: absolute;
   bottom: -35px;
   right: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .gameName {
   position: absolute;
   left: 40px;
   font-size: 150%;
-  font-family: Arial, Helvetica, sans-serif ;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .a1 {
   position: absolute;
   right: 34%;
   top: 40%;
+  background-color: rgb(0, 0, 255);
 }
 
 .a2 {
   position: absolute;
   right: 46%;
   top: 60%;
+  background-color: rgb(255, 130, 20);
 }
 
 .a3 {
   position: absolute;
   left: 34%;
   top: 40%;
+  background-color: rgb(120, 255, 47);
 }
 
 .writtenPlayerWin {
