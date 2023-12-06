@@ -38,11 +38,7 @@ function App() {
       setPlayerWin('draw');
     }
   } 
-    
-  useEffect(() => {
-    console.log('Player 1', player1);
-    console.log('Player 2', player2);
-  })
+
   
   return (
     <>
@@ -73,30 +69,9 @@ function App() {
           <button className="a2" onClick={() => Result(setPlayer1('rock'), setPlayer2(selectedOptionForMachine))}><img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_1280.png" alt="" width='50px'/></button>
           <button className="a3" onClick={() => Result(setPlayer1('paper'), setPlayer2(selectedOptionForMachine))}><img src="https://storage.needpix.com/rsynced_images/rock-paper-scissors-296855_1280.png" alt="" width='50px'/></button>
         </div>
-        </div>
-      <div className='bpai'>
-        <div className='b1'>
-
-        </div>
-        <div className='b2'>
-
-        </div>
-        <div className='b3'>
-        </div>
       </div>
-      <div>
-      </div>
-      <div>
-      SCORE PLAYER 1: {score}
-    </div>
-
-    <div className='arena'>
-      RESULTADO: {playerWin}
-    </div>
-
     <div>
     </div>
-    SCORE PLAYER 2: {score2}
     </>
   )
 }

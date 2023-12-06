@@ -68,19 +68,25 @@
 .a1 {
   position: absolute;
   right: 34%;
-  top: 50%;
+  top: 40%;
 }
 
 .a2 {
   position: absolute;
   right: 46%;
-  top: 70%;
+  top: 60%;
 }
 
 .a3 {
   position: absolute;
   left: 34%;
-  top: 50%;
+  top: 40%;
+}
+
+.writtenPlayerWin {
+  position: absolute;
+  top: 75%;
+  right: 48%;
 }
 
 .arena {
