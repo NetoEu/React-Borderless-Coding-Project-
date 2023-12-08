@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 
+
 function App() {
 
   const [playerWin, setPlayerWin] = useState(null);
@@ -76,4 +77,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
