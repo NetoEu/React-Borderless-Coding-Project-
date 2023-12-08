@@ -1,6 +1,6 @@
-import { useState } from "react";
 
-const game = () => {
+
+const Game = () => {
     return (
         <h1>
             Foi!
@@ -8,4 +8,4 @@ const game = () => {
     );
 }
 
-export default game;
+export default Game;
