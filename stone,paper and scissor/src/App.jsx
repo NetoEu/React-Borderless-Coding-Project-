@@ -1,18 +1,13 @@
 import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Play from './pages/Play';
-import Game from './pages/Game';
+
+import { Outlet } from 'react-router-dom';
 
 
 function App() {
   return (
-    <>    
-  <Routes>
-    <Route path="/" element={<Play />} />
-    <Route path="/games" element={<Game />} />
-  </Routes>
-  </>
+    <div><Outlet /></div>
   )
 }
 
