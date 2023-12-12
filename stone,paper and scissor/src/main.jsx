@@ -18,8 +18,12 @@ const router = createBrowserRouter([
   },
 ]);
 
+import { myHookProvider } from './context/myfirsthook.jsx'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <myHookProvider>
+      <RouterProvider router={router} />
+    </myHookProvider>
   </React.StrictMode>
 )
