@@ -4,8 +4,8 @@ import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import Play from './pages/play.jsx'
-import Game from './pages/game.jsx'
+import Play from './pages/Play'
+import Game from './pages/Game'
 
 const router = createBrowserRouter([
   {
@@ -18,12 +18,12 @@ const router = createBrowserRouter([
   },
 ]);
 
-import { myHookProvider } from './context/myfirsthook.jsx'
+import { MyhookProvider } from './context/myfirsthook'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <myHookProvider>
+    <MyhookProvider>
       <RouterProvider router={router} />
-    </myHookProvider>
+    </MyhookProvider>
   </React.StrictMode>
 )
