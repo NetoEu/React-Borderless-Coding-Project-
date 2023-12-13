@@ -1,5 +1,6 @@
 import { useState } from "react";
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { useContext } from "react";
 
@@ -11,7 +12,18 @@ const Game = () => {
 
     return (
         <>
-            {msg}
+            <div>
+                <Link to="/">Play Again</Link>
+            </div>
+            <p>
+                {msg}
+            </p>
+            <div>
+                {toggleMsg}
+            </div>
+            <div>
+                <button onClick={toggleMsg}></button>
+            </div>
         </>
     );
 }

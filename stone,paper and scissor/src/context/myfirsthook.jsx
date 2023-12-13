@@ -7,7 +7,7 @@ export const MyhookProvider = ({ children }) => {
     const [msg, setMsg] = useState("Foi");
 
     const toggleMsg = () => {
-        setMsg('Vai!!!!!!');
+        setMsg(msg === 'Vai!!!!!!' ? 'Foi' : 'Vai!!!!!!');
     };
 
     return (
