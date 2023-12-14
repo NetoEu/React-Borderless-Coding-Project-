@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +8,13 @@ import { MyhookContext } from "../context/myfirsthook";
 
 const Game = () => {
 
-    const {msg, toggleMsg} = useContext(MyhookContext);
+    const {player1, player2, Result, score, selectedOptionForMachine, setPlayer1, setPlayer2, playerWin, setPlayerWin, setScore} = useContext(MyhookContext);
+
+    useEffect(() => {
+        console.log(player1)
+        console.log(selectedOptionForMachine)
+        console.log(playerWin)
+    })
 
     return (
         <>
@@ -16,13 +22,11 @@ const Game = () => {
                 <Link to="/">Play Again</Link>
             </div>
             <p>
-                {msg}
+                O Resultado é: {playerWin}
             </p>
             <div>
-                {toggleMsg}
             </div>
             <div>
-                <button onClick={toggleMsg}></button>
             </div>
         </>
     );

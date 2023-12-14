@@ -13,8 +13,6 @@ import { MyhookContext } from './context/myfirsthook';
 
 function App() {
 
-  const { msg } = useContext(MyhookContext);
-
   return (
     <div><Outlet /></div>
   )
