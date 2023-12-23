@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { useContext } from "react";
 
@@ -10,7 +10,6 @@ import { MyhookContext } from "../context/myfirsthook";
 const Play = () => {
 
     const {score,player1, Result, player2, setPlayer1,selectedOptionForMachine, setPlayer2, Player1scissor, Player1paper, Player1rock, Player2random} = useContext(MyhookContext);
-
 
     return (
         <>
@@ -38,9 +37,9 @@ const Play = () => {
             </div>
             </div>
                 <Link to="/games">
-                    <button className="a1" onClick={Player1scissor}><img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296853_1280.png" width='50px'/></button>
-                    <button className="a2" onClick={Player1rock}><img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_1280.png" width='50px'/></button>
-                    <button className="a3" onClick={Player1paper}><img src="https://storage.needpix.com/rsynced_images/rock-paper-scissors-296855_1280.png" width='50px'/></button>
+                    <button className="a1" onClick={() => Result(setPlayer1('scissor'))}><img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296853_1280.png" width='50px'/></button>
+                    <button className="a2" onClick={() => Result(setPlayer1('rock'))}><img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_1280.png" width='50px'/></button>
+                    <button className="a3" onClick={() => Result(setPlayer1('paper'))}><img src="https://storage.needpix.com/rsynced_images/rock-paper-scissors-296855_1280.png" width='50px'/></button>
                 </Link>
             </div>
         </div>

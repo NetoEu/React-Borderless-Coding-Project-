@@ -8,25 +8,14 @@ export const MyhookProvider = ({ children }) => {
     const [player2, setPlayer2] = useState(null);
     const [playerWin, setPlayerWin] = useState(null);
     const [score, setScore] = useState(0);
-    const [score2, setScore2] = useState(null);
 
     const options = ['rock', 'paper', 'scissor'];
 
     const selectedOptionForMachine = options[Math.floor(Math.random() * options.length)];
 
-    const Player1scissor = () => {
-        setPlayer1('scissor')
-    };
-    const Player1rock = () => {
-        setPlayer1('rock')
-    };
-    const Player1paper = () => {
-        setPlayer1('paper')
-    };
-
     const Player2random = () => {
         setPlayer2(selectedOptionForMachine)
-    };
+    }
 
     const Result = () => {
         if (player1 === 'rock' && selectedOptionForMachine === 'scissor') {
@@ -51,7 +40,7 @@ export const MyhookProvider = ({ children }) => {
     };
 
     return (
-        <MyhookContext.Provider value = {{Result,player1, selectedOptionForMachine, player2, setScore, score2, setScore2, playerWin, score, Player1scissor, Player1rock, Player1paper, Player2random, setPlayerWin}}>
+        <MyhookContext.Provider value = {{Result, setPlayer1, setPlayer2, player1, selectedOptionForMachine, player2, setScore, playerWin, score, Player2random, setPlayerWin}}>
             {children}
         </MyhookContext.Provider>
     )

@@ -8,13 +8,14 @@ import { MyhookContext } from "../context/myfirsthook";
 
 const Game = () => {
 
-    const {player1, player2, Result, score, selectedOptionForMachine, setPlayer1, setPlayer2, playerWin, setPlayerWin, setScore} = useContext(MyhookContext);
+    const {Result, player1, player2, score, selectedOptionForMachine, playerWin, setPlayerWin, setScore} = useContext(MyhookContext);
 
     useEffect(() => {
         console.log(player1)
+        console.log(score)
         console.log(selectedOptionForMachine)
-        console.log(playerWin)
-    })
+    });
+
 
     return (
         <>
