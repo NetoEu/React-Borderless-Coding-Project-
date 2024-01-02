@@ -9,7 +9,7 @@ import { MyhookContext } from "../context/myfirsthook";
 
 const Play = () => {
 
-    const {score,player1, Result, player2, setPlayer1,selectedOptionForMachine, setPlayer2, Player1scissor, Player1paper, Player1rock, Player2random} = useContext(MyhookContext);
+    const {score, Result, setPlayer1} = useContext(MyhookContext);
 
     return (
         <>

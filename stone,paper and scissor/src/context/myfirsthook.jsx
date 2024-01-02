@@ -13,9 +13,7 @@ export const MyhookProvider = ({ children }) => {
 
     const selectedOptionForMachine = options[Math.floor(Math.random() * options.length)];
 
-    const Player2random = () => {
-        setPlayer2(selectedOptionForMachine)
-    }
+    const imagem_scissor = ["https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296853_1280.png"]
 
     const Result = () => {
         if (player1 === 'rock' && selectedOptionForMachine === 'scissor') {
@@ -39,8 +37,18 @@ export const MyhookProvider = ({ children }) => {
         }
     };
 
+    const imgResult = () => {
+        if (player1 === 'scissor') {
+           return <img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296853_1280.png" width='50px'/>
+        } else if (player1 === 'paper') {
+            return <img src="https://storage.needpix.com/rsynced_images/rock-paper-scissors-296855_1280.png" width='50px'/>
+        } else {
+            return <img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_1280.png" width='50px'/>
+        }
+    };
+
     return (
-        <MyhookContext.Provider value = {{Result, setPlayer1, setPlayer2, player1, selectedOptionForMachine, player2, setScore, playerWin, score, Player2random, setPlayerWin}}>
+        <MyhookContext.Provider value = {{Result, setPlayer1, imgResult, setPlayer2, player1, selectedOptionForMachine, player2, setScore, playerWin, score, setPlayerWin}}>
             {children}
         </MyhookContext.Provider>
     )

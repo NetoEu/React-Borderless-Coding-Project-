@@ -10,7 +10,7 @@ import { MyhookContext } from './context/myfirsthook';
 
 function App() {
 
-  const {Result, player1, player2, score, selectedOptionForMachine, playerWin, setPlayerWin, setScore} = useContext(MyhookContext);
+  const {Result, player1, player2, score, imgResult, selectedOptionForMachine, playerWin, setPlayerWin, setScore} = useContext(MyhookContext);
 
   return (
     <div><Outlet /></div>
