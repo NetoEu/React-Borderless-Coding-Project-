@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import React from 'react';
 import { Link } from 'react-router-dom';
-import paper_img from "../images/paper_img.png";
 
 import { useContext } from "react";
 

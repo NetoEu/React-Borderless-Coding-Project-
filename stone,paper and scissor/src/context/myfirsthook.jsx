@@ -13,8 +13,6 @@ export const MyhookProvider = ({ children }) => {
 
     const selectedOptionForMachine = options[Math.floor(Math.random() * options.length)];
 
-    const imagem_scissor = ["https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296853_1280.png"]
-
     const Result = () => {
         if (player1 === 'rock' && selectedOptionForMachine === 'scissor') {
         setPlayerWin('Player 1 win');
