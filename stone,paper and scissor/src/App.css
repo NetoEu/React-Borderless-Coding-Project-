@@ -129,14 +129,27 @@
 
 .imgResultPlayer1 {
   position: absolute;
-  right: 36%;
+  right: 31%;
   top: 50%;
 }
 
 .imgResultPlayer2 {
   position: absolute;
-  right: 60%;
+  right: 65%;
   top: 50%;
+}
+
+.playAgain_style {
+  position: absolute;
+  right: 46.8%;
+  top: 40%;
+}
+
+.playerWin_style {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30%;
 }
 
 

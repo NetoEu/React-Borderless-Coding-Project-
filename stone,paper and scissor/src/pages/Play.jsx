@@ -43,8 +43,6 @@ const Play = () => {
                 </Link>
             </div>
         </div>
-        <div>
-        </div>
         </>
     )
 }
