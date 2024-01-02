@@ -125,6 +125,21 @@
   right: 46%;
 }
 
+/* ------------- GAME.JSX ------------- */
+
+.imgResultPlayer1 {
+  position: absolute;
+  right: 36%;
+  top: 50%;
+}
+
+.imgResultPlayer2 {
+  position: absolute;
+  right: 60%;
+  top: 50%;
+}
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
