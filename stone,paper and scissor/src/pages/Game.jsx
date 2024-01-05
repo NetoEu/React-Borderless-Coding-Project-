@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Header from "./Header";
 
 import { useContext } from "react";
 
@@ -21,33 +22,10 @@ const Game = () => {
     return (
         <>
         <div>
-            Result
+            <Header />
         </div>
-        <div className='App'>
-            <div className='div1'>
-                <div className='frontScore'>
-                    <div className='player1Score'>
-                        <p className='numberPlayer1Score'>
-                            {score}
-                        </p>
-                    </div>
-                    <div className='gameName'>
-                        <p>
-                        Pedra
-                        </p>
-                        <p>
-                        Papel
-                        </p>
-                        <p>
-                        Tesoura
-                        </p>
-                    </div>
-                </div>
-                <div className="playAgain_style">
-                    <Link to="/">Play Again</Link>
-                </div>
-                <div className="playerWin_style">
-                    O Resultado é: {playerWin}
+                <div>
+                    <Link className= "playAgain_style" to="/">Play Again</Link>
                 </div>
                 <div className="imgResultPlayer1">
                     {imgResult(player1)}
@@ -55,8 +33,6 @@ const Game = () => {
                 <div className="imgResultPlayer2">
                     {imgResult2(selectedOptionForMachine)}
                 </div>
-            </div>
-        </div>
         </>
     );
 }

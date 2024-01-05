@@ -64,22 +64,22 @@
 
 .a1 {
   position: absolute;
-  right: 34%;
-  top: 40%;
+  right: 26%;
+  top: 20%;
   background-color: rgb(0, 0, 255);
 }
 
 .a2 {
   position: absolute;
-  right: 46%;
-  top: 60%;
+  right: 40%;
+  top: 30%;
   background-color: rgb(255, 130, 20);
 }
 
 .a3 {
   position: absolute;
-  left: 34%;
-  top: 40%;
+  left: 38%;
+  top: 20%;
   background-color: rgb(120, 255, 47);
 }
 
@@ -129,27 +129,33 @@
 
 .imgResultPlayer1 {
   position: absolute;
-  right: 65%;
-  top: 50%;
+  right: 55%;
+  top: 25%;
 }
 
 .imgResultPlayer2 {
   position: absolute;
-  right: 31%;
-  top: 50%;
+  right: 25%;
+  top: 25%;
 }
 
 .playAgain_style {
   position: absolute;
-  right: 46.8%;
-  top: 40%;
+  right: 40%;
+  top: 20%;
+  padding: 10px;
+  background-color: aqua;
 }
 
 .playerWin_style {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-top: 30%;
+  padding-top: 40%;
+}
+
+.link_to_hide {
+  color: rgb(38, 38, 38);
 }
 
 

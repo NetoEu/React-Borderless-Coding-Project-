@@ -4,8 +4,8 @@ import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import Play from './pages/Play'
-import Game from './pages/Game'
+import Play from './pages/Play.jsx'
+import Game from './pages/Game.jsx'
 
 const router = createBrowserRouter([
   {
