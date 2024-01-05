@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 export const MyhookContext = createContext();
 
@@ -14,39 +14,49 @@ export const MyhookProvider = ({ children }) => {
     const selectedOptionForMachine = options[Math.floor(Math.random() * options.length)];
 
     const Result = () => {
-        if (player1 === 'rock' && selectedOptionForMachine === 'scissor') {
+        if (player1 === 'rock' && player2 === 'scissor') {
         setPlayerWin('Player 1 win');
         setScore(score + 1);
-        } else if (player1 === 'rock' && selectedOptionForMachine === 'paper') {
+        } else if (player1 === 'rock' && player2 === 'paper') {
         setPlayerWin('Player 2 Win');
-        } else if (player1 === 'scissor' && selectedOptionForMachine === 'paper') {
+        } else if (player1 === 'scissor' && player2 === 'paper') {
         setPlayerWin('Player 1 win')
         setScore(score + 1)
-        } else if (player1 === 'paper' && selectedOptionForMachine === 'scissor') {
+        } else if (player1 === 'paper' && player2 === 'scissor') {
         setPlayerWin('Player 2 Win')
-        } else if (player1 === 'paper' && selectedOptionForMachine === 'rock') {
+        } else if (player1 === 'paper' && player2 === 'rock') {
         setPlayerWin('Player 1 win')
         setScore(score + 1)
-        } else if (player1 === 'scissor' && selectedOptionForMachine === 'rock') {
+        } else if (player1 === 'scissor' && player2 === 'rock') {
         setPlayerWin('Player 2 Win')
         }
         else {
-        setPlayerWin('draw');
+        setPlayerWin('Draw')
         }
     };
 
     const imgResult = () => {
         if (player1 === 'scissor') {
-           return <img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296853_1280.png" width='50px'/>
+           return <img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296853_1280.png" width='75px'/>
         } else if (player1 === 'paper') {
-            return <img src="https://storage.needpix.com/rsynced_images/rock-paper-scissors-296855_1280.png" width='50px'/>
-        } else {
-            return <img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_1280.png" width='50px'/>
+            return <img src="https://storage.needpix.com/rsynced_images/rock-paper-scissors-296855_1280.png" width='75px'/>
+        } else if (player1 === 'rock') {
+            return <img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_1280.png" width='75px'/>
+        }
+    };
+
+    const imgResult2 = () => {
+        if (player2 === 'scissor') {
+           return <img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296853_1280.png" width='75px'/>
+        } else if (player2 === 'paper') {
+            return <img src="https://storage.needpix.com/rsynced_images/rock-paper-scissors-296855_1280.png" width='75px'/>
+        } else if (player2 === 'rock') {
+            return <img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_1280.png" width='75px'/>
         }
     };
 
     return (
-        <MyhookContext.Provider value = {{Result, setPlayer1, imgResult, setPlayer2, player1, selectedOptionForMachine, player2, setScore, playerWin, score, setPlayerWin}}>
+        <MyhookContext.Provider value = {{Result, setPlayer1, imgResult, imgResult2, setPlayer2, player1, selectedOptionForMachine, player2, setScore, playerWin, score, setPlayerWin}}>
             {children}
         </MyhookContext.Provider>
     )

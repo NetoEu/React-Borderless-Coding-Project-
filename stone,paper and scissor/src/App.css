@@ -129,13 +129,13 @@
 
 .imgResultPlayer1 {
   position: absolute;
-  right: 31%;
+  right: 65%;
   top: 50%;
 }
 
 .imgResultPlayer2 {
   position: absolute;
-  right: 65%;
+  right: 31%;
   top: 50%;
 }
 

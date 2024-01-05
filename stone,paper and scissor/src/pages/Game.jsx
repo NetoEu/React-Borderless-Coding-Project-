@@ -8,7 +8,15 @@ import { MyhookContext } from "../context/myfirsthook";
 
 const Game = () => {
 
-    const {imgResult, playerWin, player1, score} = useContext(MyhookContext);
+    const {Result, imgResult, imgResult2, playerWin, player1, score, player2, selectedOptionForMachine} = useContext(MyhookContext);
+
+    useEffect(() => {
+        console.log(score)
+        console.log(player1)
+        console.log(player2)
+        console.log(playerWin)
+    })
+
 
     return (
         <>
@@ -45,7 +53,7 @@ const Game = () => {
                     {imgResult(player1)}
                 </div>
                 <div className="imgResultPlayer2">
-                    {imgResult(player1)}
+                    {imgResult2(selectedOptionForMachine)}
                 </div>
             </div>
         </div>
