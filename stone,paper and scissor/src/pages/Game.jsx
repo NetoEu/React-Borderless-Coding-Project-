@@ -21,11 +21,13 @@ const Game = () => {
 
     return (
         <>
-        <div>
+        <div className="Pai">
             <Header />
-        </div>
+                <div className= "playAgain_style">
+                    <Link to="/">Play Again</Link>
+                </div>
                 <div>
-                    <Link className= "playAgain_style" to="/">Play Again</Link>
+                        O Resultado é: {playerWin}
                 </div>
                 <div className="imgResultPlayer1">
                     {imgResult(player1)}
@@ -33,6 +35,7 @@ const Game = () => {
                 <div className="imgResultPlayer2">
                     {imgResult2(selectedOptionForMachine)}
                 </div>
+        </div>
         </>
     );
 }

@@ -21,9 +21,8 @@ const Play = () => {
 
     return (
         <>
-        <div>
+        <div className="Pai">
             <Header />
-        </div>
             <div>
                 <Link className="link_to_hide" to="/games">
                     <button className="a1" onClick={() => Result(setPlayer1('scissor'), setPlayer2(selectedOptionForMachine))}><img src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296853_1280.png" width='60px'/></button>
@@ -31,6 +30,7 @@ const Play = () => {
                     <button className="a3" onClick={() => Result(setPlayer1('paper'), setPlayer2(selectedOptionForMachine))}><img src="https://storage.needpix.com/rsynced_images/rock-paper-scissors-296855_1280.png" width='60px'/></button>
                 </Link>
             </div>
+        </div>
         </>
     )
 }

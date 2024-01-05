@@ -18,32 +18,45 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.div1 {
-  background-color: rgb(159, 159, 159);
-  position: relative;
-  width: 1200px;
-  height: 700px;
+.Pai {
+  display: flex;
+  background-color: darkolivegreen;
+  padding: 40px;
+  border-radius: 15px;
+  justify-content: center;
+  width: 1500px;
+  height: 600px;
   border-radius: 15px;
   border-color: aqua;
+  padding: 15px
+}
+
+.div1 {
+  background-color: rgb(159, 159, 159);
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  height: 300px;
+  border-radius: 15px;
+  border-color: aqua;
+  padding: 15px
 }
 
 .frontScore {
   background-color: rgb(159, 159, 159);
   border-color: aliceblue;
-  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 200px;
   width: 900px;
-  right: 12%;
-  top: 3%;
   border-style: solid;
   border-radius: 10px;
   border-color: #888;
+  padding: 10px;
 }
 
 .player1Score {
-  position: absolute;
-  right: 50px;
-  top: 40px;
   font-size: 300%;
   font-family: 'Courier New', Courier, monospace;
   border-style: solid;
@@ -53,11 +66,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 5px;
 }
 
 .gameName {
-  position: absolute;
-  left: 40px;
+  display: block;
+  padding: 10px;
   font-size: 150%;
   font-family:'Courier New', Courier, monospace;
 }
@@ -128,14 +142,14 @@
 /* ------------- GAME.JSX ------------- */
 
 .imgResultPlayer1 {
-  position: absolute;
-  right: 55%;
+display: flex;
+  right: 65%;
   top: 25%;
 }
 
 .imgResultPlayer2 {
   position: absolute;
-  right: 25%;
+  right: 15%;
   top: 25%;
 }
 
@@ -148,10 +162,10 @@
 }
 
 .playerWin_style {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  position: fixed;
+  top: 30%;
   padding-top: 40%;
+  position: ;
 }
 
 .link_to_hide {
