@@ -40,8 +40,8 @@ const Game = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
-        <Footer />
         </>
     );
 }

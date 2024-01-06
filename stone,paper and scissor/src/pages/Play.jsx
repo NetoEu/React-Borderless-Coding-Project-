@@ -41,8 +41,8 @@ const Play = () => {
                     </Link>
                 </div>
             </div>
+            <Footer />
         </div>
-        <Footer />
         </>
     )
 }

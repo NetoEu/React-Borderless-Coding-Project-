@@ -7,8 +7,10 @@ const Footer = () => {
 
     return(
         <>
-            <div>
-                FOOTER AQUI
+            <div className="footer_1">
+                <button className="button_footer">
+                    <h3>Rules</h3>
+                </button>
             </div>
         </>
     )
