@@ -27,14 +27,16 @@ const Game = () => {
                 <div className= "playAgain_style">
                     <Link to="/">Play Again</Link>
                 </div>
-                <div>
-                        O Resultado é: {playerWin}
-                </div>
-                <div className="imgResultPlayer1">
-                    {imgResult(player1)}
-                </div>
-                <div className="imgResultPlayer2">
-                    {imgResult2(selectedOptionForMachine)}
+                <div className="PlayFilho_game2">
+                    <div className="imgResultPlayer1">
+                        {imgResult(player1)}
+                    </div>
+                    <div className="PlayerWin_style">
+                            <h3>O Resultado é: {playerWin}</h3>
+                    </div>
+                    <div className="imgResultPlayer2">
+                        {imgResult2(selectedOptionForMachine)}
+                    </div>
                 </div>
             </div>
         </div>

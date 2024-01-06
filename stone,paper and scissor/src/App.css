@@ -66,7 +66,6 @@
 .PlayFilho_play {
   display: flex;
   padding: 5%;
-  background-color: aqua;
 }
 
 .B1Filho {
@@ -151,41 +150,48 @@
 
 .PlayFilho_game {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 5%;
-  background-color: aqua;
-}
-
-.imgResultPlayer1 {
-  display: flex;
-  right: 65%;
-  top: 25%;
-}
-
-.imgResultPlayer2 {
-  position: absolute;
-  right: 15%;
-  top: 25%;
+  flex-direction: column;
+  padding: 30px;
 }
 
 .playAgain_style {
   display: flex;
-  padding: 10px;
-  background-color: aqua;
+  padding-bottom: 100px;
+  font-size: large;
+}
+
+.PlayFilho_game2 {
+  display: flex;
+  align-items: center;
+}
+
+.imgResultPlayer1 {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  padding: 20px;
+}
+
+.imgResultPlayer2 {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  padding: 20px;
 }
 
 .playerWin_style {
-  position: fixed;
-  top: 30%;
-  padding-top: 40%;
-}
-
-.link_to_hide {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
-  background-color: darkolivegreen;
+  padding: 20px;
 }
 
 
