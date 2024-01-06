@@ -18,6 +18,8 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* HEADER */
+
 .Pai {
   display: flex;
   flex-direction: column;
@@ -63,6 +65,10 @@
   font-family:'Courier New', Courier, monospace;
 }
 
+/* ------------- HEADER ------------- */
+
+/* Play.JSX */
+
 .PlayFilho_play {
   display: flex;
   padding: 5%;
@@ -104,49 +110,9 @@
   background-color: rgb(120, 255, 47);
 }
 
-.writtenPlayerWin {
-  position: absolute;
-  top: 75%;
-  right: 48%;
-}
+/* ------------- Play.JSX ------------- */
 
-.arena {
-  padding: 100px;
-  display: flex;
-  justify-content: center;
-}
-
-.bpai {
-  position: relative;
-}
-
-.b1 {
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  left: 12%;
-  
-}
-
-.b2 {
-  background-color: rgb(69, 73, 73);
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  right: 12%;
-  
-}
-
-.b3 {
-  background-color: aqua;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  right: 46%;
-}
-
-/* ------------- GAME.JSX ------------- */
+/* GAME.JSX */
 
 .PlayFilho_game {
   display: flex;
@@ -193,6 +159,10 @@
 .playerWin_style {
   padding: 20px;
 }
+
+/* ------------- GAME.JSX ------------ */
+
+/* FOOTER.JSX */
 
 
 @keyframes logo-spin {

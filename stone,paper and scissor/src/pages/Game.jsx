@@ -6,6 +6,7 @@ import Header from "./Header";
 import { useContext } from "react";
 
 import { MyhookContext } from "../context/myfirsthook";
+import Footer from "./Footer";
 
 const Game = () => {
 
@@ -40,6 +41,7 @@ const Game = () => {
                 </div>
             </div>
         </div>
+        <Footer />
         </>
     );
 }

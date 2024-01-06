@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from "./Header";
+import Footer from "./Footer";
 
 import { useContext } from "react";
 
@@ -41,6 +42,7 @@ const Play = () => {
                 </div>
             </div>
         </div>
+        <Footer />
         </>
     )
 }

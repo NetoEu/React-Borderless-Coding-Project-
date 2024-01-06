@@ -7,7 +7,7 @@ import { MyhookContext } from "../context/myfirsthook";
 
 const Header = () => {
 
-    const {score, playerWin} = useContext(MyhookContext);
+    const { score, playerWin } = useContext(MyhookContext);
 
     return (
     <>
