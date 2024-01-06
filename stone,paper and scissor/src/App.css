@@ -20,25 +20,12 @@
 
 .Pai {
   display: flex;
+  flex-direction: column;
   background-color: darkolivegreen;
-  padding: 40px;
   border-radius: 15px;
-  justify-content: center;
-  width: 1500px;
+  align-items: center;
+  width: 1200px;
   height: 600px;
-  border-radius: 15px;
-  border-color: aqua;
-  padding: 15px
-}
-
-.div1 {
-  background-color: rgb(159, 159, 159);
-  display: flex;
-  justify-content: center;
-  width: 700px;
-  height: 300px;
-  border-radius: 15px;
-  border-color: aqua;
   padding: 15px
 }
 
@@ -76,24 +63,45 @@
   font-family:'Courier New', Courier, monospace;
 }
 
+.PlayFilho_play {
+  display: flex;
+  padding: 5%;
+  background-color: aqua;
+}
+
+.B1Filho {
+  display: flex;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
 .a1 {
-  position: absolute;
-  right: 26%;
-  top: 20%;
+  display: flex;
+  padding: 10px;
   background-color: rgb(0, 0, 255);
 }
 
+.B2Filho {
+  display: flex;
+  padding: 10px;
+  padding-top: 50px;
+}
+
 .a2 {
-  position: absolute;
-  right: 40%;
-  top: 30%;
+  display: flex;
+  padding: 10px;
   background-color: rgb(255, 130, 20);
 }
 
+.B3Filho {
+  display: flex;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
 .a3 {
-  position: absolute;
-  left: 38%;
-  top: 20%;
+  display: flex;
+  padding: 10px;
   background-color: rgb(120, 255, 47);
 }
 
@@ -141,8 +149,16 @@
 
 /* ------------- GAME.JSX ------------- */
 
+.PlayFilho_game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  background-color: aqua;
+}
+
 .imgResultPlayer1 {
-display: flex;
+  display: flex;
   right: 65%;
   top: 25%;
 }
@@ -154,9 +170,7 @@ display: flex;
 }
 
 .playAgain_style {
-  position: absolute;
-  right: 40%;
-  top: 20%;
+  display: flex;
   padding: 10px;
   background-color: aqua;
 }
@@ -165,11 +179,13 @@ display: flex;
   position: fixed;
   top: 30%;
   padding-top: 40%;
-  position: ;
 }
 
 .link_to_hide {
-  color: rgb(38, 38, 38);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: darkolivegreen;
 }
 
 
