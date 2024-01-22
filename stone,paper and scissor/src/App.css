@@ -189,6 +189,47 @@
 
 /* FOOTER.JSX */
 
+/* ---------------- MODAL.JSX ------------------ */
+
+.darkBG {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+  width: 20vw;
+  height: 20vh;
+  background-color: white;
+}
+
+.modal_header {
+
+}
+
+.modalContent {
+
+}
+
+.closeButton {
+
+}
+
+.closeButton:hover {
+
+}
+
+/* ------------------ MODAL.JSX ------------------- */
+
+
 /* MOBILE */
 @media (max-height: 932px) and (max-width: 430px) {
 
