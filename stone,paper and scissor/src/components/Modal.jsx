@@ -14,13 +14,15 @@ const Modal = ({setIsOpen}) => {
                 <div className="centered">
                     <div className="modal">
                         <div className="modal_header">
-                            <h5>Rules</h5>
+                            <h3>Rules</h3>
                             </div>
                             <button className="closeButton" onClick={() => setIsOpen(false)}>
                                 <RiCloseLine style={{ marginBottom: "-3px" }} />
                             </button>
                             <div className="modalContent">
-                                <p>Rules</p>
+                                <p>Para iniciar o jogo, você escolhe uma opção dentre pedra, papel ou tesoura.</p>
+                                <p>O computador escolherá uma opção aleatóriamente e o resultado aparecerá no centro da tela.</p>
+                                <p>Para jogar novamente, basta clicar no botão que aparecerá na tela, acima da indicação do ganhador.</p>
                             </div>
 
                     </div>

@@ -208,8 +208,8 @@
 }
 
 .modal {
-  width: 20vw;
-  height: 20vh;
+  width: 30vw;
+  height: 31vh;
   background-color: white;
   color: black;
   border-radius: 16px;
@@ -217,7 +217,7 @@
 }
 
 .modal_header {
-  height: 10vh;
+  height: 5vh;
   background: white;
   overflow: hidden;
   border-top-left-radius: 16px;
@@ -438,6 +438,74 @@
 }
 
 /* FOOTER.JSX MOBILE */
+
+/* ---------------- MODAL.JSX Mobile ------------------ */
+
+.darkBG {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+  width: 50vw;
+  height: 40vh;
+  background-color: white;
+  color: black;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.modal_header {
+  height: 5vh;
+  background: white;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.modalContent {
+  padding: 10px;
+  font-size: 14px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.closeButton {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.25s ease;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
+  position: absolute;
+  right: 0;
+  top: 0;
+  align-self: flex-end;
+  margin-top: -7px;
+  margin-right: -7px;
+}
+
+.closeButton:hover {
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  transform: translate(-4px, 4px);
+}
+
+/* ------------------ MODAL.JSX Mobile ------------------- */
 
 }
 /* MOBILE */
