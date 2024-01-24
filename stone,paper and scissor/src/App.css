@@ -192,7 +192,8 @@
 /* ---------------- MODAL.JSX ------------------ */
 
 .darkBG {
-  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -216,7 +217,7 @@
 }
 
 .modal_header {
-  height: 30vh;
+  height: 10vh;
   background: white;
   overflow: hidden;
   border-top-left-radius: 16px;

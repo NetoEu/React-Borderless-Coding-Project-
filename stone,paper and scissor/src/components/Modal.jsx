@@ -6,7 +6,7 @@ import { useContext } from "react";
 
 import { MyhookContext } from "../context/myfirsthook";
 
-const Modal = (setIsOpen) => {
+const Modal = ({setIsOpen}) => {
 
     return (
         <>

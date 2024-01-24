@@ -1,5 +1,8 @@
 import React, { useContext, useState } from "react";
+
 import { MyhookContext } from "../context/myfirsthook";
+
+import Modal from "../components/Modal";
 
 const Footer = () => {
 
@@ -12,6 +15,7 @@ const Footer = () => {
                     <h3>Rules</h3>
                 </button>
             </div>
+            {isOpen && <Modal setIsOpen={setIsOpen} />}
         </>
     )
 }

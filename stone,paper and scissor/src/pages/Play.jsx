@@ -12,7 +12,7 @@ import { MyhookContext } from "../context/myfirsthook";
 
 const Play = () => {
 
-    const {score, Result, setPlayer1, setPlayer2, selectedOptionForMachine, playerWin, player1, player2, isOpen, setIsOpen} = useContext(MyhookContext);
+    const {score, Result, setPlayer1, setPlayer2, selectedOptionForMachine, playerWin, player1, player2, isOpen} = useContext(MyhookContext);
 
     useEffect(() => {
         console.log(playerWin)
@@ -25,7 +25,6 @@ const Play = () => {
         <>
         <div className="Pai">
             <Header />
-            {isOpen && <Modal setIsOpen={setIsOpen} />}
             <div className="PlayFilho_play">
                 <div className="B1Filho">
                     <Link className="a1" to="/games">
