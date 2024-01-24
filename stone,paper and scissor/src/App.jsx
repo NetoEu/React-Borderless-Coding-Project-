@@ -7,7 +7,6 @@ import { useContext } from 'react';
 import { MyhookContext } from './context/myfirsthook';
 
 
-
 function App() {
 
   const {Result, player1, player2, score, imgResult, selectedOptionForMachine, playerWin, setPlayerWin, setScore} = useContext(MyhookContext);

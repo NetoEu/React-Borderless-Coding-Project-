@@ -9,6 +9,8 @@ export const MyhookProvider = ({ children }) => {
     const [playerWin, setPlayerWin] = useState(null);
     const [score, setScore] = useState(0);
 
+    const [isOpen, setIsOpen] = useState(false);
+
     const options = ['rock', 'paper', 'scissor'];
 
     const selectedOptionForMachine = options[Math.floor(Math.random() * options.length)];
@@ -56,7 +58,7 @@ export const MyhookProvider = ({ children }) => {
     };
 
     return (
-        <MyhookContext.Provider value = {{Result, setPlayer1, imgResult, imgResult2, setPlayer2, player1, selectedOptionForMachine, player2, setScore, playerWin, score, setPlayerWin}}>
+        <MyhookContext.Provider value = {{Result, setPlayer1, imgResult, imgResult2, setPlayer2, player1, selectedOptionForMachine, player2, setScore, playerWin, score, setPlayerWin, isOpen, setIsOpen}}>
             {children}
         </MyhookContext.Provider>
     )
